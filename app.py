@@ -19,11 +19,7 @@ try:
 except ImportError:
     ML_AVAILABLE = False
 
-try:
-    from tensorflow.keras.models import Sequential
-    from tensorflow.keras.layers import LSTM, Dense, Dropout
-    LSTM_AVAILABLE = True
-except ImportError:
+
     LSTM_AVAILABLE = False
 
 app = Flask(__name__)
